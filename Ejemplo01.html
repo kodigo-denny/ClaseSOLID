@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Ejemplo01.js"></script>
+    <script>
+        let empleado = new Empleado("Denny", "Herrera", "7777-7777")
+        //let report = new TimeSheetReport()
+
+        TimeSheetReport.print(empleado, 40)
+        TimeSheetReport.print15(empleado, 20)
+
+        let salarioMensual = Calculo.calcular(40)
+        let salarioQuincenal = Calculo.calcular15(20)
+
+        Pago.procesarPago(salarioMensual)
+        Pago.procesarPago(salarioQuincenal)
+
+        //report.printTimeSheetReport15()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

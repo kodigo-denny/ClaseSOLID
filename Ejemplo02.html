@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Ejemplo02.js"></script>
+    <script>
+        let tierra = new Ground()
+        let aire = new Air()
+        let drone = new Drone()
+        let maritimo = new Maritimo()
+
+        let orden = new Order(maritimo, 90, 20)
+        alert("Costo de envio: " + orden.getShippingCost()+"\nTipo de envio: " + orden.shipping.tipo)
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
